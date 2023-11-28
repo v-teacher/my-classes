@@ -17,7 +17,7 @@ echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 
 # Añadir usuario 'osantana' con acceso a /var/www/html
 useradd osantana -d /var/www/html
-echo "osantana:santi.2023" | chpasswd
+echo "osantana:santi.2023" | chpasswd // Modificar password una vez creado el usuario
 
 # Asegurar la propiedad y los permisos adecuados para que 'osantana' pueda editar archivos
 chown -R osantana:apache /var/www/html
