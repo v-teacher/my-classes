@@ -8,5 +8,5 @@ URLs de utilidad
 
 Reference for sql script:
 
-- [https://www.geeksforgeeks.org/sql-create-table/](Create Table SQL)
-- [https://www.geeksforgeeks.org/sql-select-query/](Select SQL)
+- [Create Table SQL](https://www.geeksforgeeks.org/sql-create-table/)
+- [Select SQL](https://www.geeksforgeeks.org/sql-select-query/)
