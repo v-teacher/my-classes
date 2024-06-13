@@ -1,3 +1,7 @@
+------------------------
+-- Creando las tablas --
+------------------------
+
 CREATE TABLE Employee (
     EmployeeID INT PRIMARY KEY,
     FirstName VARCHAR(50),
@@ -15,6 +19,15 @@ CREATE TABLE Customer(
     Phone int
 );
 
+CREATE TABLE SubTable AS
+SELECT CustomerID, CustomerName
+FROM customer;
+
+
+----------------------------------------
+-- Insertando datos en tabla customer --
+----------------------------------------
+
 INSERT INTO Customer (CustomerID, CustomerName, LastName, Country, Age, Phone)
 VALUES (1, 'Shubham', 'Thakur', 'India','23','1234567890'),
        (2, 'Aman ', 'Chopra', 'Australia','21','1234567890'),
@@ -23,9 +36,8 @@ VALUES (1, 'Shubham', 'Thakur', 'India','23','1234567890'),
        (5, 'Nishant. Salchichas S.A.', 'Jain', 'Spain','22','1234567890');
 
 
-CREATE TABLE SubTable AS
-SELECT CustomerID, CustomerName
-FROM customer;
-
+-------------------------------------------------
+-- Seleccionando datos de la tabla customer --
+-------------------------------------------------
 
 SELECT CustomerName, LastName FROM Customer;
